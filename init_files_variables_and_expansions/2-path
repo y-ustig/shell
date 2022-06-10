@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -printf \c | echo $PATH /action
+echo PATH=$PATH:/action
