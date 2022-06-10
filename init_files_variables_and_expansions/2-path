@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -print | echo $PATH /action
+find . -type d -printf \c | echo $PATH /action
