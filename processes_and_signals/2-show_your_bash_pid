@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# this lessos is very importan
+
+ps axuf | grep "bash"
