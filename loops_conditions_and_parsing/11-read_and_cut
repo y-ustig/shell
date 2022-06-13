@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
+#read and cut
+i="etc/passwd"
+while IFS = read -r line
+do
+	echo "$line" | cut -d ":" --fields=1,3,6
 
+done < "$i"
