@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
 # this lessos is very importan
+
+pkill -9 -f ./7-highlander

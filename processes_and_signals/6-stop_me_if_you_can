@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
 # this lessos is very importan
+
+pkill -f ./4-to_infinity_and_beyond

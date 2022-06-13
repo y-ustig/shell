@@ -1,2 +1,13 @@
 #!/usr/bin/env bash
 # this lessos is very importan
+
+sudo touch /var/run/myscript.pid
+sudo chmod 777 /var/run/myscript.pid
+echo $BASHPID >> /var/run/myscript.pid
+while true; do
+      echo "To infinity and beyond"
+      sleep 2
+      trap "echo 'I hate the kill command'; sudo rm /var/run/myscript.pid; exit 1" SIGTERM
+      trap "echo 'Y U no love me?!'" SIGINT
+      trap "sudo rm /var/run/myscript.pid; exit 1" SIGQUIT
+done

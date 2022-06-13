@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
-# this lessos is very importan
+#) this lessos is very importan
+
+while true; do
+      echo "To infinity and beyond"
+      sleep 2
+      trap 'echo "I am invincible!!!"' SIGTERM
+done
