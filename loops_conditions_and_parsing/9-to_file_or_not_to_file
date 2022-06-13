@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #file
-file=school
-if [ -e $file ] ; then
+file="school"
+if [ -e $file ]; then
        echo " $file file exists"
 
-       if [ -s $file ] ; then
+       if [ -s $file ]; then
 	 echo " $file file is not empty"
 
  else 
@@ -12,7 +12,7 @@ if [ -e $file ] ; then
 
        fi
 
-       if [ -f $file ] ; then 
+       if [ -f $file ]; then 
 	       echo " $file is a regular file"
 
        fi
