@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
+# lest go a print 10 files
 
+i="0"
+while [ $i -lt 10 ]
+do 
+	echo "Best School"
+	i=$((i + 1))
+done
